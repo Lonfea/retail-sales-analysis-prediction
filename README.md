@@ -20,7 +20,8 @@ A retail company provided 1,600 sales transactions across categories, countries,
 ```
 retail-sales-analysis-prediction/
 ├── retail_analysis.ipynb   # EDA, model and insights
-├── images/                 # key charts from the notebook
+├── images/                 # key charts and the Tableau dashboard
+├── tableau/                # screenshots of all Tableau sheets
 ├── data/                   # dataset (see data/README.md)
 ├── requirements.txt
 └── README.md
@@ -32,7 +33,7 @@ retail-sales-analysis-prediction/
 |---|---|
 | Best category | Electronics, but all six categories are close ($0.6M–$0.7M) |
 | Strongest markets | India, then UAE and Australia; the UK is the weakest |
-| Customer segments | Almost even: Home Office 35.4%, Corporate 32.8%, Consumer 31.8% |
+| Customer segments | Sales almost even (Home Office 35.4%, Corporate 32.8%, Consumer 31.8%), but Consumer brings the most profit (≈ $148.5K vs ≈ $120K for Corporate) |
 | Discount vs profit | Almost no relationship (r = −0.03) |
 | Sales prediction | Linear Regression R² = −0.01, MAE ≈ $1,300 |
 
@@ -53,7 +54,11 @@ The model predicts almost the same value (about $2,500) for every order, so it d
 
 ## Tableau dashboard
 
-Link: _add your Tableau Public link here_
+Built in Tableau with four views: sales by category, sales by country (world map), monthly sales trend by year, and profit by segment.
+
+![Tableau dashboard](images/tableau_dashboard.png)
+
+All sheets: [tableau/tableau_dashboard_screenshots.pdf](tableau/tableau_dashboard_screenshots.pdf)
 
 ## How to run
 
